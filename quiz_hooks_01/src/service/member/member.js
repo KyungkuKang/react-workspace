@@ -1,7 +1,7 @@
 let data_set = [
-    {id:"aaa", pwd:"aaa", name:"홍길동", addr:"산골짜기"},
-    {id:"bbb", pwd:"bbb", name:"홍길동", addr:"개똥별"},
-    {id:"ccc", pwd:"ccc", name:"홍길동", addr:"마포구"},
+    {id:"aaa", pwd:"aaa", name:"오경준", addr:"지축역"},
+    {id:"bbb", pwd:"bbb", name:"김지환", addr:"삼송역"},
+    {id:"ccc", pwd:"ccc", name:"오충환", addr:"마포구"},
 ]
 //필터( data => data.name === 이름 )
 //export getList = () => data_set
