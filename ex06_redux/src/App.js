@@ -1,25 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
-
+import { Route, Routes } from 'react-router-dom';
+import ListPage from './pages/ListPage';
+import LoginPage from './pages/LoginPage';
+import RegPage from './pages/RegPage';
+import IndexPage from './pages/IndexPage';
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return (<>
+  <Routes>
+    <Route path="/" element={<IndexPage />} />
+    <Route path="/list" element={<ListPage />} />
+    <Route path="/login" element={<LoginPage />} />
+    <Route path="/register" element={<RegPage />} />
+  </Routes>
+    {/*<ReduxCon />*/}
+  </>);
 }
 
 export default App;
