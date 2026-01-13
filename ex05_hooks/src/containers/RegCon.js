@@ -1,5 +1,5 @@
 import { useReducer } from "react";
-import RegCom from "../conponents/RegCom";
+import RegCom from "../components/RegCom";
 import { initalReg, initalState, reducer } from "../moduls/member_red";
 import { register } from "../service/member";
 import { useNavigate } from "react-router-dom";

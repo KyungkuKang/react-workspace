@@ -1,5 +1,5 @@
 import { useReducer } from "react";
-import ReducerCom from "../conponents/ReducerCom"
+import ReducerCom from "../components/ReducerCom"
 const reducer = (state, action) => {
     console.log("setNum state : ", state )
     console.log("setNum action : ", action )
