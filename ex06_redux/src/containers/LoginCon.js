@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import LoginCom from "../components/LoginCom";
 import inputSlice from "../redux/inputSlice";
+import { loginThunk } from "../service/authThunk";
 
 const LoginCon = () => {
     const dispatch = useDispatch();
@@ -20,7 +21,9 @@ const LoginCon = () => {
     }
     const onSubmit = (e) => {
         e.preventDefault();
-        console.log(e.target)
+        //console.log(e.target)
+        const result = dispatch( loginThunk({id,pwd}) )
+        console.log("result : ", result);
     }
     return(<>
         <LoginCom onSubmit={onSubmit} onChange={onChange} username={id} pwd={pwd} />
