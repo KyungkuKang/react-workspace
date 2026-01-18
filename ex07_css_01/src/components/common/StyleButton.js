@@ -7,15 +7,15 @@ const StyledButton = styled.button`
     ${ props => css`
         ${props.width && `width : ${props.width};` }
         ${props.background && 
-        `background-color : rgba(${props.background[0]}, 
-                                    ${props.background[1]};)` }
+        `background-color : rgba(${props.$background[0]}, 
+                                    ${props.$background[1]};)` }
         ` }
     &:hover { 
         background-color: gray; 
         ${ props => css`
             ${props.background && 
-            `background-color : rgba(${props.background[0]}, 
-                                        ${props.background[1] + 0.5}); ` }
+            `background-color : rgba(${props.$background[0]}, 
+                                        ${props.$background[1] + 0.5}); ` }
         ` }
     }
 `;

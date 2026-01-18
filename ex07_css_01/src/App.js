@@ -6,12 +6,18 @@ import Test03 from './test/TestCom03';
 import { Route, Routes } from 'react-router-dom';
 import IndexCon from './containers/IndexCon';
 import LoginCon from './containers/LoginCon';
+import RegisterCon from './containers/RegisterCon';
+import MemberListCon from './containers/MemberListCon';
+import MemberDetailCon from './containers/MemberDetailCon';
 
 function App() {
   return (<>
     <Routes>
       <Route path='/' element={<IndexCon />}/>
       <Route path='/login' element={<LoginCon />}/>
+      <Route path='/register' element={<RegisterCon />} />
+      <Route path='/members' element={<MemberListCon />} />
+      <Route path="/members/:username" element={<MemberDetailCon />} />
     </Routes>
   
   {/* 
